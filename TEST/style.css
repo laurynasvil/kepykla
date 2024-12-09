@@ -1,0 +1,24 @@
+#trecio-penktas span {
+    color:blue;
+}
+
+.raudonas {color:red;}
+.zalias {color:green;}
+
+.fonas-raudonas{
+    background-color:red;
+    color:white;
+}
+
+.fonas-melynas {
+    background-color:blue;
+    color:white;
+}
+
+.tekstas-storas {
+    font-weight:bold;
+}
+
+.tekstas-didesnis {
+    font-size:30px;
+}
