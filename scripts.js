@@ -21,7 +21,42 @@ calculateButton.addEventListener('click', function(){
     resultsDiv.innerHTML += `<p><strong>Ar spes pagaminti?</strong> ${isBakeryGonnaMakeIt ? `taip`: `Ne`}</p>`
 });
 
+document.getElementById('employee-count').addEventListener('keyup', function(event){
+    let inputValue = event.target.valueAsNumber;
 
+    if (inputValue < 0 ){
+        event.target.classList.add('error')
+        event.target.nextElementSibling.classList.add('show')
+    } else {
+        event.target.classList.remove('error')
+        event.target.nextElementSibling.classList.remove('show')
+    }
+})
+
+document.getElementById('employees-makes-per-day').addEventListener('keyup', function(event){
+    let inputValue = event.target.valueAsNumber;
+
+    if (inputValue < 0){
+        event.target.classList.add('error')
+        event.target.nextElementSibling.classList.add('show')
+    } else {
+        event.target.classList.remove('error')
+        event.target.nextElementSibling.classList.remove('show')
+    }
+})
+
+
+document.getElementById('day-reservations').addEventListener('keyup', function(event){
+    let inputValue = event.target.valueAsNumber;
+
+    if (inputValue < 0){
+        event.target.classList.add('error')
+        event.target.nextElementSibling.classList.add('show')
+    } else {
+        event.target.classList.remove('error')
+        event.target.nextElementSibling.classList.remove('show')
+    }
+})
 
 
 

@@ -24,10 +24,12 @@
         <div class="input-wrapper">
             <label for="employees-makes-per-day">Duonos kepalų per dieną (vienas darbuotojas):</label>
             <input type="number" min="0" step="1" value="0" id="employees-makes-per-day">
+            <span class="error">Duonos kepalu, skaicius negali būti neigiamas.</span>
         </div>
         <div class="input-wrapper">
             <label for="day-reservations">Užsakymų kiekis:</label>
             <input type="number" min="0" step="1" value="0" id="day-reservations">
+            <span class="error">Uzsakymu skaicius negali buti minusinis!</span>
         </div>
         <button id="calculate">Skaičiuoti</button>
         <button id="reset">Iš naujo</button>
