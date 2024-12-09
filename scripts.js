@@ -9,13 +9,9 @@ calculateButton.addEventListener('click', function(){
     let bakeryTotal = employeesCount * employeesMakesPerDay;
     let isBakeryGonnaMakeIt = bakeryTotal >= dayReservations
 
-    // let logInfo = {
-    //     bakeryTotal,
-    //     isBakeryGonnaMakeIt
-    // }
-    // console.log(logInfo)
+   
     let resultsDiv = document.getElementById('results')
-    // console.log(resultsDiv)
+    
     resultsDiv.innerHTML = `<p><strong>Kepykla per diena spes pagaminti:</strong> ${bakeryTotal} kepalu</p>`;
     resultsDiv.innerHTML += `<p><strong>Jai reik speti pagaminti:</strong> ${dayReservations} kepalu</p>`;
     resultsDiv.innerHTML += `<p><strong>Ar spes pagaminti?</strong> ${isBakeryGonnaMakeIt ? `taip`: `Ne`}</p>`
@@ -57,6 +53,14 @@ document.getElementById('day-reservations').addEventListener('keyup', function(e
         event.target.nextElementSibling.classList.remove('show')
     }
 })
+
+document.getElementById('reset').addEventListener('click', function(){
+  document.getElementById('employee-count').value = 0;
+  document.getElementById('employees-makes-per-day').value = 0;
+  document.getElementById('day-reservations').value = 0;
+  document.getElementById('results').innerHTML = '<p>Kol kas nieko nėra.</p>'
+})
+
 
 
 
