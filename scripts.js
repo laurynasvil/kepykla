@@ -16,7 +16,11 @@ calculateButton.addEventListener('click', function(){
     // console.log(logInfo)
     let resultsDiv = document.getElementById('results')
     // console.log(resultsDiv)
+    resultsDiv.innerHTML = `<p><strong>Kepykla per diena spes pagaminti:</strong> ${bakeryTotal} kepalu</p>`;
+    resultsDiv.innerHTML += `<p><strong>Jai reik speti pagaminti:</strong> ${dayReservations} kepalu</p>`;
+    resultsDiv.innerHTML += `<p><strong>Ar spes pagaminti?</strong> ${isBakeryGonnaMakeIt ? `taip`: `Ne`}</p>`
 });
+
 
 
 
